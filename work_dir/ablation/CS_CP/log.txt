@@ -1,0 +1,508 @@
+[01.06.20|00:06:20] Parameters:
+{'work_dir': './work_dir/recognition/ablation_wo_self_link_CS', 'config': './config/st_gcn/ablation_config/train.yaml', 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 50, 'use_gpu': True, 'device': [0, 1], 'log_interval': 100, 'save_interval': 2, 'eval_interval': 2, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': './data/NTU-RGB-D-120/xsub/wrong_set/train_mh_data.npy', 'label_path': './data/NTU-RGB-D-120/xsub/wrong_set/train_mh_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': './data/NTU-RGB-D-120/xsub/mh_set/val_hi.npy', 'label_path': './data/NTU-RGB-D-120/xsub/mh_set/val_hi_label.pkl'}, 'batch_size': 40, 'test_batch_size': 40, 'debug': False, 'model': 'net.st_gcn.Model', 'model_args': {'in_channels': 3, 'num_class': 120, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': [], 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[01.06.20|00:06:20] Training epoch: 0
+[01.06.20|00:06:22] 	Iter 0 Done. | loss: 4.9286 | lr: 0.100000
+[01.06.20|00:08:00] 	Iter 100 Done. | loss: 2.9633 | lr: 0.100000
+[01.06.20|00:09:43] 	Iter 200 Done. | loss: 2.4936 | lr: 0.100000
+[01.06.20|00:11:42] 	Iter 300 Done. | loss: 2.4959 | lr: 0.100000
+[01.06.20|00:11:52] 	mean_loss: 2.705617072898593
+[01.06.20|00:11:52] Time consumption:
+[01.06.20|00:11:52] Done.
+[01.06.20|00:11:52] Training epoch: 1
+[01.06.20|00:13:55] 	Iter 400 Done. | loss: 2.1310 | lr: 0.100000
+[01.06.20|00:16:22] 	Iter 500 Done. | loss: 2.1129 | lr: 0.100000
+[01.06.20|00:18:52] 	Iter 600 Done. | loss: 2.0881 | lr: 0.100000
+[01.06.20|00:19:17] 	mean_loss: 2.1328851644275257
+[01.06.20|00:19:17] Time consumption:
+[01.06.20|00:19:17] Done.
+[01.06.20|00:19:17] The model has been saved as ./work_dir/recognition/ablation_wo_self_link_CS/epoch2_model.pt.
+[01.06.20|00:19:17] Eval epoch: 1
+[01.06.20|00:21:19] 	mean_loss: 2.1759990537375735
+[01.06.20|00:21:19] 	Top1: 29.53%
+[01.06.20|00:21:19] 	Top5: 73.44%
+[01.06.20|00:21:19] Done.
+[01.06.20|00:21:19] Training epoch: 2
+[01.06.20|00:23:18] 	Iter 700 Done. | loss: 1.8156 | lr: 0.100000
+[01.06.20|00:25:43] 	Iter 800 Done. | loss: 1.8289 | lr: 0.100000
+[01.06.20|00:28:05] 	Iter 900 Done. | loss: 1.4866 | lr: 0.100000
+[01.06.20|00:28:42] 	mean_loss: 1.747406052925826
+[01.06.20|00:28:42] Time consumption:
+[01.06.20|00:28:42] Done.
+[01.06.20|00:28:42] Training epoch: 3
+[01.06.20|00:30:32] 	Iter 1000 Done. | loss: 1.3617 | lr: 0.100000
+[01.06.20|00:32:55] 	Iter 1100 Done. | loss: 1.1038 | lr: 0.100000
+[01.06.20|00:35:21] 	Iter 1200 Done. | loss: 1.4722 | lr: 0.100000
+[01.06.20|00:36:12] 	mean_loss: 1.3509762655569897
+[01.06.20|00:36:12] Time consumption:
+[01.06.20|00:36:12] Done.
+[01.06.20|00:36:12] The model has been saved as ./work_dir/recognition/ablation_wo_self_link_CS/epoch4_model.pt.
+[01.06.20|00:36:12] Eval epoch: 3
+[01.06.20|00:38:13] 	mean_loss: 1.5894955927865546
+[01.06.20|00:38:13] 	Top1: 52.06%
+[01.06.20|00:38:13] 	Top5: 86.55%
+[01.06.20|00:38:13] Done.
+[01.06.20|00:38:13] Training epoch: 4
+[01.06.20|00:39:46] 	Iter 1300 Done. | loss: 0.9990 | lr: 0.100000
+[01.06.20|00:42:12] 	Iter 1400 Done. | loss: 1.1809 | lr: 0.100000
+[01.06.20|00:44:36] 	Iter 1500 Done. | loss: 0.9730 | lr: 0.100000
+[01.06.20|00:45:39] 	mean_loss: 1.1625813212981115
+[01.06.20|00:45:39] Time consumption:
+[01.06.20|00:45:39] Done.
+[01.06.20|00:45:39] Training epoch: 5
+[01.06.20|00:46:58] 	Iter 1600 Done. | loss: 0.7299 | lr: 0.100000
+[01.06.20|00:49:22] 	Iter 1700 Done. | loss: 1.1732 | lr: 0.100000
+[01.06.20|00:51:44] 	Iter 1800 Done. | loss: 1.1272 | lr: 0.100000
+[01.06.20|00:53:01] 	mean_loss: 1.042885272634068
+[01.06.20|00:53:01] Time consumption:
+[01.06.20|00:53:01] Done.
+[01.06.20|00:53:01] The model has been saved as ./work_dir/recognition/ablation_wo_self_link_CS/epoch6_model.pt.
+[01.06.20|00:53:01] Eval epoch: 5
+[01.06.20|00:55:00] 	mean_loss: 1.2782831846621998
+[01.06.20|00:55:00] 	Top1: 60.60%
+[01.06.20|00:55:00] 	Top5: 91.65%
+[01.06.20|00:55:00] Done.
+[01.06.20|00:55:00] Training epoch: 6
+[01.06.20|00:56:10] 	Iter 1900 Done. | loss: 0.8677 | lr: 0.100000
+[01.06.20|00:58:35] 	Iter 2000 Done. | loss: 0.7985 | lr: 0.100000
+[01.06.20|01:00:58] 	Iter 2100 Done. | loss: 0.9985 | lr: 0.100000
+[01.06.20|01:02:28] 	mean_loss: 0.9555993307755603
+[01.06.20|01:02:28] Time consumption:
+[01.06.20|01:02:28] Done.
+[01.06.20|01:02:28] Training epoch: 7
+[01.06.20|01:03:22] 	Iter 2200 Done. | loss: 0.6630 | lr: 0.100000
+[01.06.20|01:05:45] 	Iter 2300 Done. | loss: 1.2820 | lr: 0.100000
+[01.06.20|01:08:08] 	Iter 2400 Done. | loss: 0.7597 | lr: 0.100000
+[01.06.20|01:09:49] 	mean_loss: 0.8843276796796176
+[01.06.20|01:09:49] Time consumption:
+[01.06.20|01:09:49] Done.
+[01.06.20|01:09:49] The model has been saved as ./work_dir/recognition/ablation_wo_self_link_CS/epoch8_model.pt.
+[01.06.20|01:09:49] Eval epoch: 7
+[01.06.20|01:11:49] 	mean_loss: 1.0665315795363042
+[01.06.20|01:11:49] 	Top1: 66.33%
+[01.06.20|01:11:49] 	Top5: 94.09%
+[01.06.20|01:11:49] Done.
+[01.06.20|01:11:49] Training epoch: 8
+[01.06.20|01:12:29] 	Iter 2500 Done. | loss: 0.6934 | lr: 0.100000
+[01.06.20|01:14:55] 	Iter 2600 Done. | loss: 0.9551 | lr: 0.100000
+[01.06.20|01:17:18] 	Iter 2700 Done. | loss: 0.6392 | lr: 0.100000
+[01.06.20|01:19:11] 	mean_loss: 0.8252721889890899
+[01.06.20|01:19:11] Time consumption:
+[01.06.20|01:19:11] Done.
+[01.06.20|01:19:11] Training epoch: 9
+[01.06.20|01:19:40] 	Iter 2800 Done. | loss: 0.8984 | lr: 0.100000
+[01.06.20|01:22:00] 	Iter 2900 Done. | loss: 0.9348 | lr: 0.100000
+[01.06.20|01:24:23] 	Iter 3000 Done. | loss: 0.6146 | lr: 0.100000
+[01.06.20|01:26:30] 	mean_loss: 0.7865013584349919
+[01.06.20|01:26:30] Time consumption:
+[01.06.20|01:26:30] Done.
+[01.06.20|01:26:30] The model has been saved as ./work_dir/recognition/ablation_wo_self_link_CS/epoch10_model.pt.
+[01.06.20|01:26:30] Eval epoch: 9
+[01.06.20|01:28:29] 	mean_loss: 0.8983480046715653
+[01.06.20|01:28:29] 	Top1: 71.12%
+[01.06.20|01:28:29] 	Top5: 95.66%
+[01.06.20|01:28:29] Done.
+[01.06.20|01:28:29] Training epoch: 10
+[01.06.20|01:28:46] 	Iter 3100 Done. | loss: 0.7542 | lr: 0.010000
+[01.06.20|01:31:12] 	Iter 3200 Done. | loss: 0.7244 | lr: 0.010000
+[01.06.20|01:33:33] 	Iter 3300 Done. | loss: 0.5030 | lr: 0.010000
+[01.06.20|01:35:51] 	mean_loss: 0.61538362493407
+[01.06.20|01:35:51] Time consumption:
+[01.06.20|01:35:51] Done.
+[01.06.20|01:35:51] Training epoch: 11
+[01.06.20|01:35:54] 	Iter 3400 Done. | loss: 0.4342 | lr: 0.010000
+[01.06.20|01:38:16] 	Iter 3500 Done. | loss: 0.4665 | lr: 0.010000
+[01.06.20|01:40:39] 	Iter 3600 Done. | loss: 0.5972 | lr: 0.010000
+[01.06.20|01:43:00] 	Iter 3700 Done. | loss: 0.5604 | lr: 0.010000
+[01.06.20|01:43:12] 	mean_loss: 0.5720432417581768
+[01.06.20|01:43:12] Time consumption:
+[01.06.20|01:43:12] Done.
+[01.06.20|01:43:12] The model has been saved as ./work_dir/recognition/ablation_wo_self_link_CS/epoch12_model.pt.
+[01.06.20|01:43:12] Eval epoch: 11
+[01.06.20|01:45:09] 	mean_loss: 0.7786926460893531
+[01.06.20|01:45:10] 	Top1: 74.95%
+[01.06.20|01:45:10] 	Top5: 96.39%
+[01.06.20|01:45:10] Done.
+[01.06.20|01:45:10] Training epoch: 12
+[01.06.20|01:47:21] 	Iter 3800 Done. | loss: 0.5770 | lr: 0.010000
+[01.06.20|01:49:45] 	Iter 3900 Done. | loss: 0.3653 | lr: 0.010000
+[01.06.20|01:52:06] 	Iter 4000 Done. | loss: 0.5186 | lr: 0.010000
+[01.06.20|01:52:27] 	mean_loss: 0.5590463334688477
+[01.06.20|01:52:27] Time consumption:
+[01.06.20|01:52:27] Done.
+[01.06.20|01:52:27] Training epoch: 13
+[01.06.20|01:54:28] 	Iter 4100 Done. | loss: 0.4892 | lr: 0.010000
+[01.06.20|01:56:52] 	Iter 4200 Done. | loss: 0.6899 | lr: 0.010000
+[01.06.20|01:59:12] 	Iter 4300 Done. | loss: 0.5325 | lr: 0.010000
+[01.06.20|01:59:47] 	mean_loss: 0.5424361325390517
+[01.06.20|01:59:47] Time consumption:
+[01.06.20|01:59:47] Done.
+[01.06.20|01:59:47] The model has been saved as ./work_dir/recognition/ablation_wo_self_link_CS/epoch14_model.pt.
+[01.06.20|01:59:47] Eval epoch: 13
+[01.06.20|02:01:44] 	mean_loss: 0.768495141832452
+[01.06.20|02:01:44] 	Top1: 75.41%
+[01.06.20|02:01:44] 	Top5: 96.46%
+[01.06.20|02:01:44] Done.
+[01.06.20|02:01:44] Training epoch: 14
+[01.06.20|02:03:32] 	Iter 4400 Done. | loss: 0.4556 | lr: 0.010000
+[01.06.20|02:05:55] 	Iter 4500 Done. | loss: 0.6270 | lr: 0.010000
+[01.06.20|02:08:12] 	Iter 4600 Done. | loss: 0.4589 | lr: 0.010000
+[01.06.20|02:09:02] 	mean_loss: 0.5351515188089853
+[01.06.20|02:09:02] Time consumption:
+[01.06.20|02:09:02] Done.
+[01.06.20|02:09:02] Training epoch: 15
+[01.06.20|02:10:37] 	Iter 4700 Done. | loss: 0.3844 | lr: 0.010000
+[01.06.20|02:12:59] 	Iter 4800 Done. | loss: 0.6848 | lr: 0.010000
+[01.06.20|02:15:24] 	Iter 4900 Done. | loss: 0.3489 | lr: 0.010000
+[01.06.20|02:16:28] 	mean_loss: 0.521141999169075
+[01.06.20|02:16:28] Time consumption:
+[01.06.20|02:16:28] Done.
+[01.06.20|02:16:28] The model has been saved as ./work_dir/recognition/ablation_wo_self_link_CS/epoch16_model.pt.
+[01.06.20|02:16:28] Eval epoch: 15
+[01.06.20|02:18:28] 	mean_loss: 0.7370896890498044
+[01.06.20|02:18:28] 	Top1: 75.96%
+[01.06.20|02:18:28] 	Top5: 96.82%
+[01.06.20|02:18:28] Done.
+[01.06.20|02:18:28] Training epoch: 16
+[01.06.20|02:19:54] 	Iter 5000 Done. | loss: 0.4182 | lr: 0.010000
+[01.06.20|02:22:20] 	Iter 5100 Done. | loss: 0.2902 | lr: 0.010000
+[01.06.20|02:24:50] 	Iter 5200 Done. | loss: 0.5153 | lr: 0.010000
+[01.06.20|02:26:10] 	mean_loss: 0.5114213302490395
+[01.06.20|02:26:10] Time consumption:
+[01.06.20|02:26:10] Done.
+[01.06.20|02:26:10] Training epoch: 17
+[01.06.20|02:27:23] 	Iter 5300 Done. | loss: 0.4138 | lr: 0.010000
+[01.06.20|02:29:51] 	Iter 5400 Done. | loss: 0.3516 | lr: 0.010000
+[01.06.20|02:32:20] 	Iter 5500 Done. | loss: 0.4415 | lr: 0.010000
+[01.06.20|02:33:52] 	mean_loss: 0.49760316215865436
+[01.06.20|02:33:52] Time consumption:
+[01.06.20|02:33:52] Done.
+[01.06.20|02:33:52] The model has been saved as ./work_dir/recognition/ablation_wo_self_link_CS/epoch18_model.pt.
+[01.06.20|02:33:52] Eval epoch: 17
+[01.06.20|02:35:58] 	mean_loss: 0.7944662684934181
+[01.06.20|02:35:58] 	Top1: 74.43%
+[01.06.20|02:35:58] 	Top5: 96.25%
+[01.06.20|02:35:58] Done.
+[01.06.20|02:35:58] Training epoch: 18
+[01.06.20|02:36:59] 	Iter 5600 Done. | loss: 0.2692 | lr: 0.010000
+[01.06.20|02:39:30] 	Iter 5700 Done. | loss: 0.5522 | lr: 0.010000
+[01.06.20|02:42:02] 	Iter 5800 Done. | loss: 0.4291 | lr: 0.010000
+[01.06.20|02:43:47] 	mean_loss: 0.4894423455867952
+[01.06.20|02:43:47] Time consumption:
+[01.06.20|02:43:47] Done.
+[01.06.20|02:43:47] Training epoch: 19
+[01.06.20|02:44:33] 	Iter 5900 Done. | loss: 0.5625 | lr: 0.010000
+[01.06.20|02:47:07] 	Iter 6000 Done. | loss: 0.6717 | lr: 0.010000
+[01.06.20|02:49:40] 	Iter 6100 Done. | loss: 0.5015 | lr: 0.010000
+[01.06.20|02:51:40] 	mean_loss: 0.47874596618525805
+[01.06.20|02:51:40] Time consumption:
+[01.06.20|02:51:40] Done.
+[01.06.20|02:51:40] The model has been saved as ./work_dir/recognition/ablation_wo_self_link_CS/epoch20_model.pt.
+[01.06.20|02:51:40] Eval epoch: 19
+[01.06.20|02:53:50] 	mean_loss: 0.7336006555640907
+[01.06.20|02:53:50] 	Top1: 76.11%
+[01.06.20|02:53:50] 	Top5: 96.82%
+[01.06.20|02:53:50] Done.
+[01.06.20|02:53:50] Training epoch: 20
+[01.06.20|02:54:23] 	Iter 6200 Done. | loss: 0.5368 | lr: 0.010000
+[01.06.20|02:56:58] 	Iter 6300 Done. | loss: 0.4556 | lr: 0.010000
+[01.06.20|02:59:32] 	Iter 6400 Done. | loss: 0.4746 | lr: 0.010000
+[01.06.20|03:01:47] 	mean_loss: 0.4736696097843084
+[01.06.20|03:01:47] Time consumption:
+[01.06.20|03:01:47] Done.
+[01.06.20|03:01:47] Training epoch: 21
+[01.06.20|03:02:06] 	Iter 6500 Done. | loss: 0.3596 | lr: 0.010000
+[01.06.20|03:04:39] 	Iter 6600 Done. | loss: 0.5268 | lr: 0.010000
+[01.06.20|03:07:13] 	Iter 6700 Done. | loss: 0.7026 | lr: 0.010000
+[01.06.20|03:09:43] 	mean_loss: 0.4637468528111004
+[01.06.20|03:09:43] Time consumption:
+[01.06.20|03:09:43] Done.
+[01.06.20|03:09:43] The model has been saved as ./work_dir/recognition/ablation_wo_self_link_CS/epoch22_model.pt.
+[01.06.20|03:09:43] Eval epoch: 21
+[01.06.20|03:11:55] 	mean_loss: 0.740155602860869
+[01.06.20|03:11:55] 	Top1: 76.07%
+[01.06.20|03:11:55] 	Top5: 96.66%
+[01.06.20|03:11:55] Done.
+[01.06.20|03:11:55] Training epoch: 22
+[01.06.20|03:11:59] 	Iter 6800 Done. | loss: 0.5474 | lr: 0.010000
+[01.06.20|03:14:33] 	Iter 6900 Done. | loss: 0.4379 | lr: 0.010000
+[01.06.20|03:17:09] 	Iter 7000 Done. | loss: 0.3097 | lr: 0.010000
+[01.06.20|03:19:47] 	Iter 7100 Done. | loss: 0.2091 | lr: 0.010000
+[01.06.20|03:19:56] 	mean_loss: 0.4605858217454651
+[01.06.20|03:19:56] Time consumption:
+[01.06.20|03:19:56] Done.
+[01.06.20|03:19:56] Training epoch: 23
+[01.06.20|03:22:19] 	Iter 7200 Done. | loss: 0.3531 | lr: 0.010000
+[01.06.20|03:24:54] 	Iter 7300 Done. | loss: 0.3433 | lr: 0.010000
+[01.06.20|03:27:30] 	Iter 7400 Done. | loss: 0.5229 | lr: 0.010000
+[01.06.20|03:27:53] 	mean_loss: 0.44410825735349874
+[01.06.20|03:27:53] Time consumption:
+[01.06.20|03:27:53] Done.
+[01.06.20|03:27:53] The model has been saved as ./work_dir/recognition/ablation_wo_self_link_CS/epoch24_model.pt.
+[01.06.20|03:27:53] Eval epoch: 23
+[01.06.20|03:30:04] 	mean_loss: 0.7627534375901808
+[01.06.20|03:30:04] 	Top1: 74.69%
+[01.06.20|03:30:04] 	Top5: 97.04%
+[01.06.20|03:30:04] Done.
+[01.06.20|03:30:04] Training epoch: 24
+[01.06.20|03:32:17] 	Iter 7500 Done. | loss: 0.5482 | lr: 0.010000
+[01.06.20|03:34:53] 	Iter 7600 Done. | loss: 0.3377 | lr: 0.010000
+[01.06.20|03:37:25] 	Iter 7700 Done. | loss: 0.5202 | lr: 0.010000
+[01.06.20|03:38:03] 	mean_loss: 0.4398270284570151
+[01.06.20|03:38:03] Time consumption:
+[01.06.20|03:38:03] Done.
+[01.06.20|03:38:03] Training epoch: 25
+[01.06.20|03:40:01] 	Iter 7800 Done. | loss: 0.2899 | lr: 0.010000
+[01.06.20|03:42:36] 	Iter 7900 Done. | loss: 0.6601 | lr: 0.010000
+[01.06.20|03:45:13] 	Iter 8000 Done. | loss: 0.5038 | lr: 0.010000
+[01.06.20|03:46:04] 	mean_loss: 0.4366013381184112
+[01.06.20|03:46:04] Time consumption:
+[01.06.20|03:46:04] Done.
+[01.06.20|03:46:04] The model has been saved as ./work_dir/recognition/ablation_wo_self_link_CS/epoch26_model.pt.
+[01.06.20|03:46:04] Eval epoch: 25
+[01.06.20|03:48:15] 	mean_loss: 0.705652743159679
+[01.06.20|03:48:15] 	Top1: 76.71%
+[01.06.20|03:48:15] 	Top5: 97.26%
+[01.06.20|03:48:15] Done.
+[01.06.20|03:48:15] Training epoch: 26
+[01.06.20|03:50:02] 	Iter 8100 Done. | loss: 0.3034 | lr: 0.010000
+[01.06.20|03:52:34] 	Iter 8200 Done. | loss: 0.5264 | lr: 0.010000
+[01.06.20|03:55:10] 	Iter 8300 Done. | loss: 0.5065 | lr: 0.010000
+[01.06.20|03:56:15] 	mean_loss: 0.4239619770192791
+[01.06.20|03:56:15] Time consumption:
+[01.06.20|03:56:15] Done.
+[01.06.20|03:56:15] Training epoch: 27
+[01.06.20|03:57:46] 	Iter 8400 Done. | loss: 0.3252 | lr: 0.010000
+[01.06.20|04:00:23] 	Iter 8500 Done. | loss: 0.4217 | lr: 0.010000
+[01.06.20|04:03:00] 	Iter 8600 Done. | loss: 0.3796 | lr: 0.010000
+[01.06.20|04:04:17] 	mean_loss: 0.4150525007915343
+[01.06.20|04:04:17] Time consumption:
+[01.06.20|04:04:17] Done.
+[01.06.20|04:04:17] The model has been saved as ./work_dir/recognition/ablation_wo_self_link_CS/epoch28_model.pt.
+[01.06.20|04:04:17] Eval epoch: 27
+[01.06.20|04:06:31] 	mean_loss: 0.766455789720803
+[01.06.20|04:06:31] 	Top1: 75.71%
+[01.06.20|04:06:31] 	Top5: 96.45%
+[01.06.20|04:06:31] Done.
+[01.06.20|04:06:31] Training epoch: 28
+[01.06.20|04:07:47] 	Iter 8700 Done. | loss: 0.4257 | lr: 0.010000
+[01.06.20|04:10:23] 	Iter 8800 Done. | loss: 0.5088 | lr: 0.010000
+[01.06.20|04:12:58] 	Iter 8900 Done. | loss: 0.3298 | lr: 0.010000
+[01.06.20|04:14:32] 	mean_loss: 0.4075599360041634
+[01.06.20|04:14:32] Time consumption:
+[01.06.20|04:14:32] Done.
+[01.06.20|04:14:32] Training epoch: 29
+[01.06.20|04:15:33] 	Iter 9000 Done. | loss: 0.5737 | lr: 0.010000
+[01.06.20|04:18:10] 	Iter 9100 Done. | loss: 0.3309 | lr: 0.010000
+[01.06.20|04:20:45] 	Iter 9200 Done. | loss: 0.6084 | lr: 0.010000
+[01.06.20|04:22:35] 	mean_loss: 0.3997538824201016
+[01.06.20|04:22:35] Time consumption:
+[01.06.20|04:22:35] Done.
+[01.06.20|04:22:35] The model has been saved as ./work_dir/recognition/ablation_wo_self_link_CS/epoch30_model.pt.
+[01.06.20|04:22:35] Eval epoch: 29
+[01.06.20|04:24:50] 	mean_loss: 0.725338505862052
+[01.06.20|04:24:50] 	Top1: 76.35%
+[01.06.20|04:24:50] 	Top5: 97.05%
+[01.06.20|04:24:50] Done.
+[01.06.20|04:24:50] Training epoch: 30
+[01.06.20|04:25:38] 	Iter 9300 Done. | loss: 0.3413 | lr: 0.010000
+[01.06.20|04:28:16] 	Iter 9400 Done. | loss: 0.3077 | lr: 0.010000
+[01.06.20|04:30:52] 	Iter 9500 Done. | loss: 0.3472 | lr: 0.010000
+[01.06.20|04:32:56] 	mean_loss: 0.39013695533607384
+[01.06.20|04:32:56] Time consumption:
+[01.06.20|04:32:56] Done.
+[01.06.20|04:32:56] Training epoch: 31
+[01.06.20|04:33:31] 	Iter 9600 Done. | loss: 0.4249 | lr: 0.010000
+[01.06.20|04:36:07] 	Iter 9700 Done. | loss: 0.2758 | lr: 0.010000
+[01.06.20|04:38:46] 	Iter 9800 Done. | loss: 0.4702 | lr: 0.010000
+[01.06.20|04:41:04] 	mean_loss: 0.3889485587483471
+[01.06.20|04:41:04] Time consumption:
+[01.06.20|04:41:04] Done.
+[01.06.20|04:41:04] The model has been saved as ./work_dir/recognition/ablation_wo_self_link_CS/epoch32_model.pt.
+[01.06.20|04:41:04] Eval epoch: 31
+[01.06.20|04:43:17] 	mean_loss: 0.6998997980042507
+[01.06.20|04:43:17] 	Top1: 77.63%
+[01.06.20|04:43:17] 	Top5: 96.99%
+[01.06.20|04:43:17] Done.
+[01.06.20|04:43:17] Training epoch: 32
+[01.06.20|04:43:40] 	Iter 9900 Done. | loss: 0.2355 | lr: 0.010000
+[01.06.20|04:46:14] 	Iter 10000 Done. | loss: 0.2827 | lr: 0.010000
+[01.06.20|04:48:51] 	Iter 10100 Done. | loss: 0.4347 | lr: 0.010000
+[01.06.20|04:51:22] 	mean_loss: 0.3803960527368734
+[01.06.20|04:51:22] Time consumption:
+[01.06.20|04:51:22] Done.
+[01.06.20|04:51:22] Training epoch: 33
+[01.06.20|04:51:29] 	Iter 10200 Done. | loss: 0.4583 | lr: 0.010000
+[01.06.20|04:54:08] 	Iter 10300 Done. | loss: 0.3032 | lr: 0.010000
+[01.06.20|04:56:45] 	Iter 10400 Done. | loss: 0.3264 | lr: 0.010000
+[01.06.20|04:59:21] 	Iter 10500 Done. | loss: 0.4977 | lr: 0.010000
+[01.06.20|04:59:29] 	mean_loss: 0.36866713283903
+[01.06.20|04:59:29] Time consumption:
+[01.06.20|04:59:29] Done.
+[01.06.20|04:59:29] The model has been saved as ./work_dir/recognition/ablation_wo_self_link_CS/epoch34_model.pt.
+[01.06.20|04:59:29] Eval epoch: 33
+[01.06.20|05:01:45] 	mean_loss: 0.7216027267146529
+[01.06.20|05:01:45] 	Top1: 77.00%
+[01.06.20|05:01:45] 	Top5: 97.02%
+[01.06.20|05:01:45] Done.
+[01.06.20|05:01:45] Training epoch: 34
+[01.06.20|05:04:14] 	Iter 10600 Done. | loss: 0.5003 | lr: 0.010000
+[01.06.20|05:06:52] 	Iter 10700 Done. | loss: 0.3509 | lr: 0.010000
+[01.06.20|05:09:28] 	Iter 10800 Done. | loss: 0.6688 | lr: 0.010000
+[01.06.20|05:09:51] 	mean_loss: 0.3650693410953272
+[01.06.20|05:09:51] Time consumption:
+[01.06.20|05:09:51] Done.
+[01.06.20|05:09:51] Training epoch: 35
+[01.06.20|05:12:06] 	Iter 10900 Done. | loss: 0.2045 | lr: 0.010000
+[01.06.20|05:14:45] 	Iter 11000 Done. | loss: 0.2964 | lr: 0.010000
+[01.06.20|05:17:28] 	Iter 11100 Done. | loss: 0.2781 | lr: 0.010000
+[01.06.20|05:18:04] 	mean_loss: 0.3558637933341431
+[01.06.20|05:18:04] Time consumption:
+[01.06.20|05:18:04] Done.
+[01.06.20|05:18:04] The model has been saved as ./work_dir/recognition/ablation_wo_self_link_CS/epoch36_model.pt.
+[01.06.20|05:18:04] Eval epoch: 35
+[01.06.20|05:20:19] 	mean_loss: 0.7338585623523646
+[01.06.20|05:20:19] 	Top1: 76.71%
+[01.06.20|05:20:20] 	Top5: 96.79%
+[01.06.20|05:20:20] Done.
+[01.06.20|05:20:20] Training epoch: 36
+[01.06.20|05:22:22] 	Iter 11200 Done. | loss: 0.3021 | lr: 0.010000
+[01.06.20|05:25:01] 	Iter 11300 Done. | loss: 0.4455 | lr: 0.010000
+[01.06.20|05:27:36] 	Iter 11400 Done. | loss: 0.3461 | lr: 0.010000
+[01.06.20|05:28:27] 	mean_loss: 0.3533138156322985
+[01.06.20|05:28:27] Time consumption:
+[01.06.20|05:28:27] Done.
+[01.06.20|05:28:27] Training epoch: 37
+[01.06.20|05:30:15] 	Iter 11500 Done. | loss: 0.4388 | lr: 0.010000
+[01.06.20|05:32:55] 	Iter 11600 Done. | loss: 0.3654 | lr: 0.010000
+[01.06.20|05:35:33] 	Iter 11700 Done. | loss: 0.5582 | lr: 0.010000
+[01.06.20|05:36:38] 	mean_loss: 0.34363285271288124
+[01.06.20|05:36:38] Time consumption:
+[01.06.20|05:36:38] Done.
+[01.06.20|05:36:38] The model has been saved as ./work_dir/recognition/ablation_wo_self_link_CS/epoch38_model.pt.
+[01.06.20|05:36:38] Eval epoch: 37
+[01.06.20|05:38:57] 	mean_loss: 0.7161880118805065
+[01.06.20|05:38:57] 	Top1: 77.06%
+[01.06.20|05:38:57] 	Top5: 97.15%
+[01.06.20|05:38:57] Done.
+[01.06.20|05:38:57] Training epoch: 38
+[01.06.20|05:40:31] 	Iter 11800 Done. | loss: 0.3245 | lr: 0.010000
+[01.06.20|05:43:09] 	Iter 11900 Done. | loss: 0.3377 | lr: 0.010000
+[01.06.20|05:45:46] 	Iter 12000 Done. | loss: 0.3340 | lr: 0.010000
+[01.06.20|05:47:06] 	mean_loss: 0.3369250913364602
+[01.06.20|05:47:06] Time consumption:
+[01.06.20|05:47:06] Done.
+[01.06.20|05:47:06] Training epoch: 39
+[01.06.20|05:48:26] 	Iter 12100 Done. | loss: 0.4900 | lr: 0.010000
+[01.06.20|05:51:04] 	Iter 12200 Done. | loss: 0.3510 | lr: 0.010000
+[01.06.20|05:53:48] 	Iter 12300 Done. | loss: 0.3613 | lr: 0.010000
+[01.06.20|05:55:21] 	mean_loss: 0.3340936914134566
+[01.06.20|05:55:21] Time consumption:
+[01.06.20|05:55:21] Done.
+[01.06.20|05:55:21] The model has been saved as ./work_dir/recognition/ablation_wo_self_link_CS/epoch40_model.pt.
+[01.06.20|05:55:21] Eval epoch: 39
+[01.06.20|05:57:36] 	mean_loss: 0.6889839879253454
+[01.06.20|05:57:37] 	Top1: 77.44%
+[01.06.20|05:57:37] 	Top5: 97.12%
+[01.06.20|05:57:37] Done.
+[01.06.20|05:57:37] Training epoch: 40
+[01.06.20|05:58:43] 	Iter 12400 Done. | loss: 0.1713 | lr: 0.010000
+[01.06.20|06:01:23] 	Iter 12500 Done. | loss: 0.1973 | lr: 0.010000
+[01.06.20|06:04:05] 	Iter 12600 Done. | loss: 0.3760 | lr: 0.010000
+[01.06.20|06:05:55] 	mean_loss: 0.3260581566919015
+[01.06.20|06:05:55] Time consumption:
+[01.06.20|06:05:55] Done.
+[01.06.20|06:05:55] Training epoch: 41
+[01.06.20|06:06:45] 	Iter 12700 Done. | loss: 0.4604 | lr: 0.010000
+[01.06.20|06:09:24] 	Iter 12800 Done. | loss: 0.4698 | lr: 0.010000
+[01.06.20|06:12:03] 	Iter 12900 Done. | loss: 0.3535 | lr: 0.010000
+[01.06.20|06:14:05] 	mean_loss: 0.3143966099349812
+[01.06.20|06:14:05] Time consumption:
+[01.06.20|06:14:05] Done.
+[01.06.20|06:14:05] The model has been saved as ./work_dir/recognition/ablation_wo_self_link_CS/epoch42_model.pt.
+[01.06.20|06:14:05] Eval epoch: 41
+[01.06.20|06:16:24] 	mean_loss: 0.7220777912098065
+[01.06.20|06:16:24] 	Top1: 76.86%
+[01.06.20|06:16:24] 	Top5: 97.14%
+[01.06.20|06:16:24] Done.
+[01.06.20|06:16:24] Training epoch: 42
+[01.06.20|06:17:02] 	Iter 13000 Done. | loss: 0.2570 | lr: 0.010000
+[01.06.20|06:19:43] 	Iter 13100 Done. | loss: 0.3036 | lr: 0.010000
+[01.06.20|06:22:23] 	Iter 13200 Done. | loss: 0.3017 | lr: 0.010000
+[01.06.20|06:24:41] 	mean_loss: 0.30264168751085463
+[01.06.20|06:24:41] Time consumption:
+[01.06.20|06:24:41] Done.
+[01.06.20|06:24:41] Training epoch: 43
+[01.06.20|06:25:03] 	Iter 13300 Done. | loss: 0.2486 | lr: 0.010000
+[01.06.20|06:27:45] 	Iter 13400 Done. | loss: 0.2869 | lr: 0.010000
+[01.06.20|06:30:23] 	Iter 13500 Done. | loss: 0.4450 | lr: 0.010000
+[01.06.20|06:32:58] 	mean_loss: 0.3069118857383728
+[01.06.20|06:32:58] Time consumption:
+[01.06.20|06:32:58] Done.
+[01.06.20|06:32:58] The model has been saved as ./work_dir/recognition/ablation_wo_self_link_CS/epoch44_model.pt.
+[01.06.20|06:32:58] Eval epoch: 43
+[01.06.20|06:35:16] 	mean_loss: 0.7408063564384193
+[01.06.20|06:35:16] 	Top1: 76.64%
+[01.06.20|06:35:16] 	Top5: 96.65%
+[01.06.20|06:35:16] Done.
+[01.06.20|06:35:16] Training epoch: 44
+[01.06.20|06:35:24] 	Iter 13600 Done. | loss: 0.3405 | lr: 0.010000
+[01.06.20|06:38:03] 	Iter 13700 Done. | loss: 0.1342 | lr: 0.010000
+[01.06.20|06:40:42] 	Iter 13800 Done. | loss: 0.1396 | lr: 0.010000
+[01.06.20|06:43:25] 	Iter 13900 Done. | loss: 0.1809 | lr: 0.010000
+[01.06.20|06:43:31] 	mean_loss: 0.2898633612205295
+[01.06.20|06:43:31] Time consumption:
+[01.06.20|06:43:31] Done.
+[01.06.20|06:43:31] Training epoch: 45
+[01.06.20|06:46:05] 	Iter 14000 Done. | loss: 0.3316 | lr: 0.010000
+[01.06.20|06:48:43] 	Iter 14100 Done. | loss: 0.0757 | lr: 0.010000
+[01.06.20|06:51:28] 	Iter 14200 Done. | loss: 0.3630 | lr: 0.010000
+[01.06.20|06:51:49] 	mean_loss: 0.287541279900807
+[01.06.20|06:51:49] Time consumption:
+[01.06.20|06:51:49] Done.
+[01.06.20|06:51:49] The model has been saved as ./work_dir/recognition/ablation_wo_self_link_CS/epoch46_model.pt.
+[01.06.20|06:51:49] Eval epoch: 45
+[01.06.20|06:54:11] 	mean_loss: 0.6505832478665469
+[01.06.20|06:54:11] 	Top1: 78.93%
+[01.06.20|06:54:12] 	Top5: 97.27%
+[01.06.20|06:54:12] Done.
+[01.06.20|06:54:12] Training epoch: 46
+[01.06.20|06:56:39] 	Iter 14300 Done. | loss: 0.3054 | lr: 0.010000
+[01.06.20|06:59:21] 	Iter 14400 Done. | loss: 0.3057 | lr: 0.010000
+[01.06.20|07:02:07] 	Iter 14500 Done. | loss: 0.2124 | lr: 0.010000
+[01.06.20|07:02:42] 	mean_loss: 0.2793499558778257
+[01.06.20|07:02:42] Time consumption:
+[01.06.20|07:02:42] Done.
+[01.06.20|07:02:42] Training epoch: 47
+[01.06.20|07:04:53] 	Iter 14600 Done. | loss: 0.2685 | lr: 0.010000
+[01.06.20|07:07:37] 	Iter 14700 Done. | loss: 0.2271 | lr: 0.010000
+[01.06.20|07:10:26] 	Iter 14800 Done. | loss: 0.5070 | lr: 0.010000
+[01.06.20|07:11:17] 	mean_loss: 0.2736498537838073
+[01.06.20|07:11:17] Time consumption:
+[01.06.20|07:11:17] Done.
+[01.06.20|07:11:17] The model has been saved as ./work_dir/recognition/ablation_wo_self_link_CS/epoch48_model.pt.
+[01.06.20|07:11:17] Eval epoch: 47
+[01.06.20|07:13:35] 	mean_loss: 0.6904197816786013
+[01.06.20|07:13:35] 	Top1: 78.17%
+[01.06.20|07:13:35] 	Top5: 96.93%
+[01.06.20|07:13:35] Done.
+[01.06.20|07:13:35] Training epoch: 48
+[01.06.20|07:15:32] 	Iter 14900 Done. | loss: 0.1474 | lr: 0.010000
+[01.06.20|07:18:16] 	Iter 15000 Done. | loss: 0.2354 | lr: 0.010000
+[01.06.20|07:21:03] 	Iter 15100 Done. | loss: 0.2054 | lr: 0.010000
+[01.06.20|07:22:08] 	mean_loss: 0.26372490102322743
+[01.06.20|07:22:08] Time consumption:
+[01.06.20|07:22:08] Done.
+[01.06.20|07:22:08] Training epoch: 49
+[01.06.20|07:23:48] 	Iter 15200 Done. | loss: 0.1646 | lr: 0.010000
+[01.06.20|07:26:31] 	Iter 15300 Done. | loss: 0.3142 | lr: 0.010000
+[01.06.20|07:29:21] 	Iter 15400 Done. | loss: 0.2806 | lr: 0.010000
+[01.06.20|07:30:42] 	mean_loss: 0.26041651239865804
+[01.06.20|07:30:42] Time consumption:
+[01.06.20|07:30:42] Done.
+[01.06.20|07:30:42] The model has been saved as ./work_dir/recognition/ablation_wo_self_link_CS/epoch50_model.pt.
+[01.06.20|07:30:42] Eval epoch: 49
+[01.06.20|07:33:04] 	mean_loss: 0.7648078850486822
+[01.06.20|07:33:04] 	Top1: 75.98%
+[01.06.20|07:33:04] 	Top5: 96.89%
+[01.06.20|07:33:04] Done.
