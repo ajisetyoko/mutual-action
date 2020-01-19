@@ -70,6 +70,17 @@ class Graph():
             neighbor_link = [(i - 1, j - 1) for (i, j) in neighbor_1base]
             self.edge = self_link
             self.center = 21 - 1
+        elif layout == 'cp':
+            self.num_node = 25
+            self_link = [(i, i) for i in range(self.num_node)]
+            neighbor_1base = [(1, 2), (2, 21), (3, 21), (4, 3), (5, 21),
+                              (6, 5), (7, 6), (8, 7), (9, 21), (10, 9),
+                              (11, 10), (12, 11), (13, 1), (14, 13), (15, 14),
+                              (16, 15), (17, 1), (18, 17), (19, 18), (20, 19),
+                              (22, 23), (23, 8), (24, 25), (25, 12)]
+            neighbor_link = [(i - 1, j - 1) for (i, j) in neighbor_1base]
+            self.edge = neighbor_link
+            self.center = 21 - 1
         elif layout == 'ntu_edge':
             self.num_node = 24
             self_link = [(i, i) for i in range(self.num_node)]
