@@ -59,7 +59,7 @@ class Graph():
             neighbor_link = [(i - 1, j - 1) for (i, j) in neighbor_1base]
             self.edge = self_link + neighbor_link
             self.center = 21 - 1
-        elif layout == 'ntu-rgb+d2':
+        elif layout == 'pp':
             self.num_node = 25
             self_link = [(i, i) for i in range(self.num_node)]
             neighbor_1base = [(1, 2), (2, 21), (3, 21), (4, 3), (5, 21),
