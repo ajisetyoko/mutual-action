@@ -32,6 +32,8 @@ main.py recognition -c config/MA_Mode/CS/pp.yaml
 |
 |PAM         | MH | 82.1   | 80.91 |
 |PAM         | AD | 73.87  | 76.85 |
+
+
 > PP=Pairwise of two partners; CP=partner-1 to the center of partner-2 and vice versa; PCP = use both PP and CP; MA = trained and tested on mutual actions only.
 
 > MH = Tested on mutual action subset only; AD=Tested on all actions label, *PCP
