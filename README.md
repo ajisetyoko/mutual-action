@@ -29,7 +29,6 @@ main.py recognition -c config/MA_Mode/CS/pp.yaml
 | PP Matrix  | MA | 80.17  | 86.56 |
 | CP Matrix  | MA | 78.93  | 82.87 |
 | PCP Matrix | MA | 83.28  | 88.36 |
-|
 |PAM         | MH | 82.1   | 80.91 |
 |PAM         | AD | 73.87  | 76.85 |
 
