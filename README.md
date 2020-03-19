@@ -57,7 +57,7 @@ main.py recognition -c config/MA_Mode/CS/pp.yaml
 | TOP 5 Accuration  | 100% | 100%   | 100%  |100%  |100%  |100%     |
 
 **C. UT-Interaction Dataset**   
--------- SET1
+
 
 
 ### Reference
