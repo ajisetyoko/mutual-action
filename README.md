@@ -49,6 +49,7 @@ main.py recognition -c config/MA_Mode/CS/pp.yaml
 > PP=Pairwise of two partners; CP=partner-1 to the center of partner-2 and vice versa; PCP  use both PP and CP; MA = trained and tested on mutual actions only.
 > MH = Tested on mutual action subset only; AD=Tested on all actions label, *PCP
 
+
 **B. SBU-Kinect-Ineteraction**
 
 |     Test Model    |FOLD 1| FOLD2  |FOLD 3 |FOLD 4|FOLD 5| Average |
@@ -57,8 +58,20 @@ main.py recognition -c config/MA_Mode/CS/pp.yaml
 | TOP 5 Accuration  | 100% | 100%   | 100%  |100%  |100%  |100%     |
 
 **C. UT-Interaction Dataset**   
+  - SET 1
+  |     Test Model    |FOLD1|FOLD2|FOLD3|FOLD4|FOLD5|Average|
+  | :-----------------|:---:|:---:|:---:|:---:|:---:|:-----:|
+  | TOP 1 Accuration  |83.3%|75.0%|75.0%|75.0%|75.0%|76.66% |
 
+  - SET 2
+  |     Test Model    |FOLD1|FOLD2|FOLD3|FOLD4|FOLD5|Average|
+  | :-----------------|:---:|:---:|:---:|:---:|:---:|:-----:|
+  | TOP 1 Accuration  |83.3%|75.0%|75.0%|83.3%|66.7%|77.30% |
 
+  - Combination
+  |     Test Model    |FOLD1|FOLD2|FOLD3|FOLD4|FOLD5|Average|
+  | :-----------------|:---:|:---:|:---:|:---:|:---:|:-----:|
+  | TOP 1 Accuration  |||||||
 
 ### Reference
 [1] Spatial Temporal Graph Convolutional Networks for Skeleton-Based Action Recognition, Sijie Yan and Yuanjun Xiong and Dahua Lin  
