@@ -58,17 +58,21 @@ main.py recognition -c config/MA_Mode/CS/pp.yaml
 | TOP 5 Accuration  | 100% | 100%   | 100%  |100%  |100%  |100%     |
 
 **C. UT-Interaction Dataset**   
+
   - SET 1
+
   |     Test Model    |FOLD1|FOLD2|FOLD3|FOLD4|FOLD5|Average|
   | :-----------------|:---:|:---:|:---:|:---:|:---:|:-----:|
   | TOP 1 Accuration  |83.3%|75.0%|75.0%|75.0%|75.0%|76.66% |
 
   - SET 2
+
   |     Test Model    |FOLD1|FOLD2|FOLD3|FOLD4|FOLD5|Average|
   | :-----------------|:---:|:---:|:---:|:---:|:---:|:-----:|
   | TOP 1 Accuration  |83.3%|75.0%|75.0%|83.3%|66.7%|77.30% |
 
   - Combination
+
   |     Test Model    |FOLD1|FOLD2|FOLD3|FOLD4|FOLD5|Average|
   | :-----------------|:---:|:---:|:---:|:---:|:---:|:-----:|
   | TOP 1 Accuration  |||||||
