@@ -75,7 +75,7 @@ main.py recognition -c config/MA_Mode/CS/pp.yaml
 
   |     Test Model    |FOLD1|FOLD2|FOLD3|FOLD4|FOLD5|Average|
   | :-----------------|:---:|:---:|:---:|:---:|:---:|:-----:|
-  | TOP 1 Accuration  |||||||
+  | TOP 1 Accuration  |100% |83.3%|83.3%|100% |83.3%|90.1%  |
 
 ### Reference
 [1] Spatial Temporal Graph Convolutional Networks for Skeleton-Based Action Recognition, Sijie Yan and Yuanjun Xiong and Dahua Lin  
